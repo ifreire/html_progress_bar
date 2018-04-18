@@ -1,0 +1,23 @@
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #00ccff;
+    z-index: 1000;
+    transition:width .1s;
+    transition-timing-function: ease-out;
+    -webkit-transition:width .1s;
+    -webkit-transition-timing-function: ease-out;
+    z-index: 999;
+}
+
+/*
+body.single-post @media (max-width:769px){
+    body.progress-bar{
+        top:50px;
+        height:20px
+    }
+}
+*/
