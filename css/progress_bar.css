@@ -1,16 +1,46 @@
-.progress-bar {
+#vert-progress-bar-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background-color: #0CF;
+    z-index: 999;
+    transition:height .1s;
+    transition-timing-function: ease-out;
+    -webkit-transition:height .1s;
+    -webkit-transition-timing-function: ease-out;
+    z-index: 998;
+}
+
+#vert-progress-bar-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background-color: #F93;
+    z-index: 1000;
+    transition:height .1s;
+    transition-timing-function: ease-out;
+    -webkit-transition:height .1s;
+    -webkit-transition-timing-function: ease-out;
+    z-index: 999;
+}
+
+.hori-progress-bar {
     position: fixed;
     top: 0;
     left: 0;
     width: 0;
     height: 5px;
-    background-color: #00ccff;
-    z-index: 1000;
+    background-color: #093;
+    z-index: 1001;
     transition:width .1s;
     transition-timing-function: ease-out;
     -webkit-transition:width .1s;
     -webkit-transition-timing-function: ease-out;
-    z-index: 999;
+    z-index: 1000;
 }
 
 /*

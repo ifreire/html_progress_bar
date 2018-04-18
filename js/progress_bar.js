@@ -12,7 +12,10 @@ $(function()
             $(window).scroll(function(e)
             {
                 e.preventDefault();
-                $(".progress-bar").css("width", (($(window).scrollTop() / ($(document).height() - $(window).outerHeight())) * 100) + "%");
+                var percent = (($(window).scrollTop() / ($(document).height() - $(window).outerHeight())) * 100);
+                $("#vert-progress-bar-left").css("height", percent + "%");
+                $("#vert-progress-bar-right").css("height", percent + "%");
+                $(".hori-progress-bar").css("width", percent + "%");
             });
         });
     };
