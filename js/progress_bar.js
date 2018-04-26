@@ -13,9 +13,10 @@ $(function()
             {
                 e.preventDefault();
                 var percent = (($(window).scrollTop() / ($(document).height() - $(window).outerHeight())) * 100);
-                $("#vert-progress-bar-left").css("height", percent + "%");
-                $("#vert-progress-bar-right").css("height", percent + "%");
-                $(".hori-progress-bar").css("width", percent + "%");
+                $(".hori-progress-bar-top-left-to-right").css("width", percent + "%");
+                $("#vert-progress-bar-right-top-to-bottom").css("height", percent + "%");
+                $(".hori-progress-bar-bottom-right-to-left").css("width", percent + "%");
+                $("#vert-progress-bar-left-bottom-to-top").css("height", percent + "%");
             });
         });
     };

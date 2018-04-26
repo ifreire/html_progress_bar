@@ -1,19 +1,19 @@
-#vert-progress-bar-left {
+.hori-progress-bar-top-left-to-right {
     position: fixed;
     top: 0;
     left: 0;
-    width: 5px;
-    height: 0;
-    background-color: #0CF;
-    z-index: 999;
-    transition:height .1s;
+    width: 0;
+    height: 5px;
+    background-color: #093;
+    z-index: 1001;
+    transition:width .1s;
     transition-timing-function: ease-out;
-    -webkit-transition:height .1s;
+    -webkit-transition:width .1s;
     -webkit-transition-timing-function: ease-out;
-    z-index: 998;
+    z-index: 1000;
 }
 
-#vert-progress-bar-right {
+#vert-progress-bar-right-top-to-bottom {
     position: fixed;
     top: 0;
     right: 0;
@@ -28,19 +28,34 @@
     z-index: 999;
 }
 
-.hori-progress-bar {
+.hori-progress-bar-bottom-right-to-left {
     position: fixed;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    right: 0;
     width: 0;
     height: 5px;
-    background-color: #093;
+    background-color: #C55;
     z-index: 1001;
     transition:width .1s;
     transition-timing-function: ease-out;
     -webkit-transition:width .1s;
     -webkit-transition-timing-function: ease-out;
     z-index: 1000;
+}
+
+#vert-progress-bar-left-bottom-to-top {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background-color: #0CF;
+    z-index: 999;
+    transition:height .1s;
+    transition-timing-function: ease-out;
+    -webkit-transition:height .1s;
+    -webkit-transition-timing-function: ease-out;
+    z-index: 998;
 }
 
 /*
