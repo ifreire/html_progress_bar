@@ -1,3 +1,10 @@
+/*!
+    DATE  : 2018-04-18
+    AUTHOR: Iuri Costa Freire
+    EMAIL : iuricostafreire@gmail.com
+            Caucaia - Ceará - Brazil
+ */
+
 $(function()
 {
     $("body").progress_bar();
